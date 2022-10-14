@@ -1,0 +1,14 @@
+.flex {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  color: #333333;
+}
+.flex img {
+  margin-bottom: 30px;
+}

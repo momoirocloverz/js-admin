@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>江山投资一件事</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <style>
+        ::-webkit-scrollbar-track-piece {
+            background-color: rgba(1, 1, 1, 0);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 3px;
+            background-color: rgba(133, 188, 240, 0.6);
+        }
+    </style>
+    <link rel="manifest" href="/manifest.webmanifest" />
+</head>
+
+<body>
+    <div id="root"></div>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=HIpuFBetnp1KKYrfcleBipO6x31IeI63"></script>
+    <script src='https://wpk-gate.zjzwfw.gov.cn/static/wpk-jssdk.1.0.2/wpkReporter.js' crossorigin='true'></script>
+    <script>
+        try {
+            const config = {
+                bid: 'jntgzt_zzdpro',
+                signkey: '1234567890abcdef',
+                gateway: 'https://wpk-gate.zjzwfw.gov.cn'
+            };
+            const wpk = new wpkReporter(config);
+            wpk.installAll();
+            window._wpk = wpk;
+        } catch (err) {
+            console.error('WpkReporter init fail', err);
+        }
+    </script>
+    <script>
+        (function (w, d, s, q, i) {
+            w[q] = w[q] || [];
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s);
+            j.async = true;
+            j.id = 'beacon-aplus';
+            j.src = 'https://alidt.alicdn.com/alilog/mlog/aplus_cloud.js';
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'aplus_queue');
+
+        aplus_queue.push({
+            action: 'aplus.setMetaInfo',
+            arguments: ['aplus-rhost-v', 'alog.zjzwfw.gov.cn']
+        });
+        aplus_queue.push({
+            action: 'aplus.setMetaInfo',
+            arguments: ['aplus-rhost-g', 'alog.zjzwfw.gov.cn']
+        });
+
+        var u = navigator.userAgent
+        var isAndroid = u.indexOf('Android') > -1
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)
+
+        aplus_queue.push({
+            action: 'aplus.setMetaInfo',
+            arguments: ['appId', isAndroid ? '28302650' : isIOS ? '28328447' : '47130293']
+        });
+
+        // 单页应用 或 “单个页面”需异步补充PV日志参数还需进行如下埋点：
+        aplus_queue.push({
+            action: 'aplus.setMetaInfo',
+            arguments: ['aplus-waiting', 'MAN']
+        });//
+        // 单页应用路由切换后 或 在异步获取到pv日志所需的参数后再执行sendPV：
+        aplus_queue.push({
+            'action': 'aplus.sendPV',
+            'arguments': [{
+                is_auto: false
+            }, {
+                // 当前你的应用信息，此两行请勿修改
+                sapp_id: '22740',
+                sapp_name: 'jntgzt',
+                // 自定义PV参数key-value键值对（只能是这种平铺的json，不能做多层嵌套），如：
+                page_id: 'id:/home',
+                page_name: '首页', // 页面中文名称
+                page_url: '/home', // 页面URL 
+            }]
+        })
+    </script>
+    <script src="/tinymce/tinymce.min.js"></script>
+    <script src="/pdf.worker.min.js"></script>
+</body>
+
+</html>

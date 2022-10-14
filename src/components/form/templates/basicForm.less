@@ -1,0 +1,261 @@
+.customForm {
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  .inlineField {
+    display: inline-block;
+    min-width: 20ch;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    word-break: break-all;
+    min-width: 50px;
+    text-align: center;
+  }
+
+  th {
+    font-weight: normal;
+  }
+}
+
+.article {
+  .articleTitle {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: left;
+    font-weight: bold;
+  }
+}
+
+.fakeTable {
+  .sectionTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  .cell {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headerRow {
+    font-weight: bold;
+  }
+
+  .projectSection {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin: 4px 0;
+    box-shadow: 2px 2px 0px -1px lightgray;
+  }
+}
+
+.materialList {
+  .descList {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .descriptionItem {
+    .label {
+      display: inline-block;
+      width: 25%;
+      font-weight: 400;
+      color: #999999;
+      text-align: right;
+      vertical-align: top;
+    }
+
+    .desc {
+      display: inline-block;
+      width: 75%;
+    }
+  }
+
+  .image {
+    height: 400px;
+    width: 400px !important;
+    object-fit: cover;
+  }
+
+  :global {
+    .ant-carousel {
+
+      .slick-prev,
+      .slick-next {
+        font-size: inherit;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background: #D3D3D380;
+        border-radius: 50%;
+
+        &:hover {
+          filter: brightness(2);
+        }
+      }
+    }
+  }
+}
+
+.comparison {
+  display: flex;
+  flex-flow: column;
+  max-height: 60vh;
+  overflow-y: scroll;
+
+  .sectionWrapper {
+    .compareSection {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 10px;
+    }
+
+    &:not(:last-of-type)::after {
+      border-bottom: 1px solid lightgray;
+      content: '';
+      display: block;
+      margin: 20px 0;
+    }
+  }
+
+  .comparedItem {
+    display: flex;
+    flex-flow: column;
+
+    .itemHeader {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .itemImage {
+      width: 100%;
+      height: 250px;
+      max-height: 250px;
+      object-fit: cover;
+    }
+  }
+}
+
+.startCon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.endCon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.endHere {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+}
+
+.previewDialogCon {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  height: auto;
+  overflow-y: auto;
+}
+
+.previewImg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.previewName {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  overflow: hidden;
+
+  span {
+    width: 100px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+
+.cusCarousl2 {
+
+  :global {
+    .ant-image {
+      //   width: 280px !important;
+    }
+
+  }
+}
+
+.Example__container__document {
+  height: 520px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgba(228, 227, 227, 0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  :global {
+    .react-pdf__Page__canvas {
+      margin: 0 auto;
+      box-shadow: 0 0 8px rgba(228, 227, 227, 0.5);
+    }
+  }
+}
+
+.pagCon {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}

@@ -1,0 +1,81 @@
+.searchForm {
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.customCarouselModal {
+  .carousel {
+    min-height: 30vh;
+  }
+
+  .carouselImage {
+    object-fit: contain;
+    max-height: 90vh;
+  }
+
+  :global {
+    .ant-modal-content {
+      background: transparent;
+
+      .ant-modal-body {
+        padding: 0;
+      }
+    }
+
+    .slick-list {}
+
+    .ant-carousel {
+
+      .slick-prev,
+      .slick-next {
+        font-size: inherit;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background: #d3d3d380;
+        border-radius: 50%;
+
+        &:hover {
+          filter: brightness(2);
+        }
+      }
+    }
+  }
+}
+
+.submitBtn {
+  background-color: #0270c3;
+  border-radius: 4px;
+}
+
+.resetBtn {
+  border-color: #0270c3;
+  border-radius: 4px;
+  color: #0270c3;
+
+  &:active,
+  &:hover,
+  &:focus {
+    border-color: #0270c3;
+    color: #0270c3;
+  }
+}
+
+.tableRadioContainer {}
+
+.tag {
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  z-index: 10;
+  font-size: 12px;
+  border-radius: 51%;
+  background: #ff5471;
+  text-align: center;
+  line-height: 16px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}

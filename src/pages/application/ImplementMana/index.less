@@ -1,0 +1,102 @@
+.homePageCon {
+  font-size: 18px;
+  min-height: 100%;
+  background-color: #fff;
+  padding-top: 30px;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+
+.tdWrapper {
+  position: relative;
+  padding-left: 80px;
+}
+
+.tableCon {
+  background-color: #fff;
+  padding: 20px;
+  min-height: calc(100vh - 250px);
+  box-sizing: border-box;
+}
+
+.tabCon {
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.projectReserveBtn {
+  width: 64px;
+  height: 30px;
+  background: rgba(255, 161, 0, 0.14);
+  border-radius: 4px 4px 4px 4px;
+  color: #ffa100;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.textOverflow2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.wrapHere {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.dateCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+:global {
+  .expandRow {
+    .ant-table-thead {
+      tr > th {
+        background-color: #f4f6f9;
+      }
+    }
+  }
+  .ant-table-wrapper {
+    .ant-table-row-level-0.expanded {
+      background-color: rgba(26, 126, 233, 0.1);
+
+      .ant-table-cell-row-hover {
+        background-color: rgba(26, 126, 233, 0.1);
+      }
+    }
+  }
+
+  .ant-table-cell-fix-left,
+  .ant-table-cell-fix-right {
+    background: transparent;
+  }
+
+  .innerTable {
+    .ant-table-cell-fix-left,
+    .ant-table-cell-fix-right {
+      background: #fff;
+    }
+
+    .ant-pro-table {
+      margin-left: 30px !important;
+    }
+
+    .ant-pro-card-body {
+      padding: 0;
+    }
+  }
+}

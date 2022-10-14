@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "scripts": {
+    "serve": "umi dev",
+    "build": "umi build",
+    "analyze-bundle": "cross-env ANALYZE=1 umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.3",
+    "@ant-design/pro-form": "^1.67.3",
+    "@ant-design/pro-layout": "^6.5.0",
+    "@ant-design/pro-table": "^2.74.1",
+    "@tinymce/tinymce-react": "^3.13.0",
+    "antd": "^4.19.4",
+    "axios": "^0.21.1",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "echarts": "^5.2.1",
+    "file-saver": "^2.0.5",
+    "gdt-jsapi": "^1.9.21",
+    "html-to-draftjs": "^1.5.0",
+    "jszip": "^3.10.0",
+    "lodash": "^4.17.21",
+    "react": "17.x",
+    "react-color": "^2.19.3",
+    "react-dom": "17.x",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-easy-crop": "^4.0.1",
+    "react-images-viewer": "^1.6.7",
+    "react-pdf": "^5.7.2",
+    "tinymce": "^5.10.2",
+    "umi": "^3.5.13",
+    "umi-plugin-keep-alive": "^0.0.1-beta.30"
+  },
+  "devDependencies": {
+    "@types/mime": "^2.0.3",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.5.13",
+    "cross-env": "^7.0.3",
+    "lint-staged": "^10.0.7",
+    "postcss-px-to-viewport": "^1.1.1",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.2",
+    "yorkie": "^2.0.0"
+  }
+}

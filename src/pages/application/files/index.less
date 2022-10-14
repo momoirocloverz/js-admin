@@ -1,0 +1,102 @@
+.tdWrapper {
+  position: relative;
+  padding-left: 80px;
+}
+
+.tableCon {
+  background-color: #fff;
+  padding: 20px;
+  min-height: calc(100vh - 230px);
+  box-sizing: border-box;
+}
+
+.projectReserveBtn {
+  width: 64px;
+  height: 30px;
+  background: rgba(255, 161, 0, 0.14);
+  border-radius: 4px 4px 4px 4px;
+  color: #ffa100;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.textOverflow2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.expandSwitch {
+  position: absolute;
+  left: 16px;
+  top: 17px;
+  z-index: 1;
+}
+
+.darker {
+  color: #0270c3;
+  cursor: pointer;
+}
+
+.red {
+  color: #ff4d4f;
+  cursor: pointer;
+}
+
+:global {
+
+  .expandTable,
+  .expandRow {
+    .ant-table-thead {
+      tr>th {
+        background-color: #f4f6f9;
+      }
+    }
+  }
+
+  .ant-table-wrapper {
+    .ant-table-row-level-0.expanded {
+      background-color: rgba(26, 126, 233, 0.1);
+
+      .ant-table-cell-row-hover {
+        background-color: rgba(26, 126, 233, 0.1);
+      }
+    }
+  }
+}
+
+.attachmentName {
+  cursor: pointer;
+  color: #0270c3;
+}
+
+.Example__container__document {
+  height: 520px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgba(228, 227, 227, 0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  :global {
+    .react-pdf__Page__canvas {
+      margin: 0 auto;
+      box-shadow: 0 0 8px rgba(228, 227, 227, 0.5);
+    }
+  }
+}
+.pagCon {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}

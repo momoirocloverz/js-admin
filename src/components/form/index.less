@@ -1,0 +1,35 @@
+.sectionHeader {
+  background-color: #fafafa;
+  font-size: 16px;
+  padding: 12px 16px;
+  color: #333333;
+}
+
+.fileListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  padding: 20px;
+  .fileItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .filePreview {
+      width: 100px;
+      height: 100px;
+    }
+    .fileName {
+      display: block;
+      word-break: break-all;
+      width: 100%;
+      font-size: 12px;
+      text-align: center;
+      max-width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      //color: #333333;
+    }
+  }
+}

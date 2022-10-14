@@ -1,0 +1,236 @@
+.layout {
+  min-height: 100vh;
+}
+
+.trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #1890ff;
+  }
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.mainName {
+  line-height: 22px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  margin: 26px;
+  cursor: pointer;
+  font-family: 'huxiaobo';
+}
+
+.mainSmallName {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  margin: 26px;
+  cursor: pointer;
+  font-family: 'huxiaobo';
+}
+
+.icons {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.siteLayoutBackground {
+  background: #fff;
+}
+
+.realContentCon {
+  overflow-y: auto;
+  padding: 0 !important;
+  overflow-x: auto;
+}
+
+.fullCon {
+  height: 100%;
+  overflow-y: scroll;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+:global {
+  .ant-layout-sider {
+    background-color: #0261a9;
+  }
+
+  .ant-menu.ant-menu-dark,
+  .ant-menu-dark .ant-menu-sub,
+  .ant-menu.ant-menu-dark .ant-menu-sub {
+    background-color: #0261a9;
+  }
+
+  .ant-menu-sub.ant-menu-inline>.ant-menu-item,
+  .ant-menu-sub.ant-menu-inline>.ant-menu-submenu>.ant-menu-submenu-title {
+    //height: 60px;
+    //line-height: 60px;
+  }
+
+  .ant-menu-vertical>.ant-menu-item,
+  .ant-menu-vertical-left>.ant-menu-item,
+  .ant-menu-vertical-right>.ant-menu-item,
+  .ant-menu-inline>.ant-menu-item,
+  .ant-menu-vertical>.ant-menu-submenu>.ant-menu-submenu-title,
+  .ant-menu-vertical-left>.ant-menu-submenu>.ant-menu-submenu-title,
+  .ant-menu-vertical-right>.ant-menu-submenu>.ant-menu-submenu-title,
+  .ant-menu-inline>.ant-menu-submenu>.ant-menu-submenu-title {
+    //height: 20px;
+    //line-height: 60px;
+  }
+
+  .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .ant-menu.ant-menu-dark .ant-menu-item-selected,
+  .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.subMenuItem {
+  padding-left: 67px !important;
+}
+
+.cusMenu {
+  // height: calc(100vh - 75px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.headerCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.headLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.headRight {
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.notificationCenter {
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.notificationCon {
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 300px;
+  box-shadow: 2px 2px 20px #e8e8e8;
+}
+
+.redSpot {
+  background-color: #ff6600;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.notiTitle {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.notiListCon {
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.notiItem {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 5px rgb(131, 131, 131);
+  }
+}
+
+.notiItemContent {
+  width: 220px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.notiItemTime {
+  width: 100px;
+}
+
+.notificationConBtns {
+  text-align: center;
+}
+
+.emptyListCon {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btnMargin {
+  margin-right: 20px;
+}
+
+.redDot {
+  background-color: #ff4d4f;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  display: inline-block;
+  line-height: 25px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 1px solid #fff;
+}
+
+.flexLink {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}

@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'huxiaobo';
+  src: url('../../public/huxiaobo.ttf');
+}
+
+html,
+body {
+  font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', Helvetica,
+    Tahoma, Arial, sans-serif;
+}
+
+.tox {
+  &.tox-tinymce {
+    min-height: 500px !important;
+    max-height: 1000px !important;
+    border-color: #333;
+  }
+}
+
+.notshow {
+  display: none;
+}
+
+// 表格斑马线样式
+.zebraTable {
+  .ant-table-body {
+    .ant-table-row {
+      &.light-row {
+      }
+
+      &.dark-row {
+        background-color: rgba(196, 198, 204, 0.14);
+      }
+
+      &:hover {
+        > td.ant-table-cell-row-hover {
+          background-color: rgba(26, 126, 233, 0.1);
+        }
+      }
+    }
+  }
+}
+
+.longContentTd {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
